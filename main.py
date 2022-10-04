@@ -2,7 +2,7 @@
 import arch as trading
 
 ### Edit here
-trading_pair = "BTC/USD"
+trading_pair = "XBTUSD"
 timeframe = "5m"
 trace_back_days = 7
 ###

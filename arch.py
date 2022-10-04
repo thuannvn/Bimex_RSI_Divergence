@@ -110,8 +110,8 @@ class BitmexFetcher(LineNotify):
             try:
                 print(datetime.datetime.now(), 'Fetching candles starting from',
                       self.exchange.iso8601(from_timestamp))
-                ohlcvs = self.exchange.fetch_ohlcv(
-                    self.trading_pair, self.k_line, from_timestamp)
+
+                ohlcvs = self.exchange.fetch_ohlcv(self.trading_pair, self.k_line, from_timestamp)
                 print(self.exchange.milliseconds(),
                       'Fetched', len(ohlcvs), 'candles')
                 if len(ohlcvs) > 0:
